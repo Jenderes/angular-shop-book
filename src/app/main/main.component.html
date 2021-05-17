@@ -1,0 +1,39 @@
+<div class="head">
+  <div class="logo">
+    Bookworm
+    <div class="desc">
+      Книжный магазин
+    </div>
+  </div>
+</div>
+<div class="body_menu">
+  <div class="vertical-menu">
+    <div class="element" (click)="route.navigate(['/book'])">
+      <img src="../../assets/image/book.svg" alt="book">
+      <div class="element_name">
+        Книги
+      </div>
+    </div>
+    <div class="element" (click)="route.navigate(['/store'])">
+      <img src="../../assets/image/store.svg" alt="store">
+      <div class="element_name">
+        Магазины
+      </div>
+    </div>
+    <div class="element" (click)="route.navigate(['/customer'])">
+      <img src="../../assets/image/customer.svg" alt="customer">
+      <div class="element_name">
+        Покупатели
+      </div>
+    </div>
+    <div class="element" (click)="route.navigate(['/purchase'])">
+      <img src="../../assets/image/purchase.svg" alt="purchase">
+      <div class="element_name">
+        Заказы
+      </div>
+    </div>
+  </div>
+  <div class="menu_main">
+    <router-outlet></router-outlet>
+  </div>
+</div>

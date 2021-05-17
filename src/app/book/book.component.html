@@ -1,0 +1,33 @@
+<div class="menu_book">
+  <div class="filter_menu">
+    <div class="soring">
+        <label for="sortId">сортировать по:</label><select name="" id="sortId">
+          <option *ngFor="let sort of arraySort" [ngValue]="sort.value">{{sort.name}}</option>
+        </select>
+    </div>
+    <div class="filter">
+        <label for="filterId">фильтровать по:</label><select name="" id="filterId">
+        <option *ngFor="let filter of arrayFilter" [ngValue]="filter.value">{{filter.name}}</option>
+        </select>
+    </div>
+  </div>
+  <div class="list_book">
+    <div class="book">
+      <div class="name_book">
+        Harry Potter
+      </div>
+      <div class="count_book">
+        12
+      </div>
+      <div class="buttons_book">
+        <button class="change_button">
+          Изменить
+        </button>
+        <button class="delete_button">
+          Удалить
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
